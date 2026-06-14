@@ -4,6 +4,44 @@
   margin: 0;
   padding: 0;
 }
-img{
-  height:60px;
+body{
+  background-color: rgb(34, 78, 34);
+  color:bisque;
+  font-family: Arial, Helvetica, sans-serif;
 }
+section{
+  padding-bottom: 40px;
+}
+h1 {
+  font-family: fantasy; /*testar*/
+  font-size: 14vw;
+}
+img {
+  height: 60px;
+}
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.contact-container {
+  max-width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+.contact-info {
+  padding: 30px;
+}
+.form-container {
+  padding: 30px;
+}
+
+/* @media (max-width:600px){
+	 mobile first 
+}
+@media (min-width:600px){
+	 desktop first 
+}   */

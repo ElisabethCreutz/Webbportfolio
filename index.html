@@ -22,11 +22,13 @@
 
     <main>
       <section id="home">
+        <div class="hero-container">
         <h1>Elisabeth Creutz</h1>
         <p>
           .NET Developer under development: looking for LIA internship spring
           2027
         </p>
+        </div>
       </section>
 
       <section id="skills">
@@ -68,56 +70,62 @@
       </section>
 
       <section id="contact">
+        <div class="contact-container">
+          <div class="contact-info">
         <h2>Contact me</h2>
-        <p>Tel: <a href="tel:0735716619">0 7 3 5 7 1 6 6 1 9</a></p>
+        <p>Give me a <a href="tel:0735716619">call</a></p>
         <p>
           Mail:
           <a href="mailto:elisabeth.creutz@gmail.com"
             >elisabeth.creutz[@]gmail.com</a
           >
         </p>
+        </div>
         <div class="form-container">
           <form
             action="https://formsubmit.co/elisabeth.creutz@gmail.com"
             method="POST"
           >
-          <input type="hidden" name="_captcha" value="false" />
-        <input type="hidden" name="_template" value="table" />
-            <div class="form-group">
-              <div class="form-row">
-                <div class="col">
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
+           
+                  <label for="name">Name</label>
                   <input
                     type="text"
-                    name="name"
-                    placeholder="Full Name"
+                    id="name"
+                    name="Name"
+                    placeholder="Name Namesson"
                     required
                   />
-                </div>
-                <div class="col">
+               
+                  
+                  <label for="email">Email</label>
                   <input
                     type="email"
-                    name="email"
-                    placeholder="Email Address"
+                    id="email"
+                    name="Email"
+                    placeholder="name@email.com"
                     required
+                    pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
                   />
-                </div>
-              </div>
-            </div>
-            <div class="form-group">
+             
+              <label for="message"></label>
               <textarea
-                placeholder="Hiya, write me a message"
-                class="form-control"
-                name="message"
+              id="message"
+              name="Message"
+              placeholder="Hiya, write me a message"
                 rows="5"
                 required
               ></textarea>
-            </div>
+            
             <!-- <input type="hidden" name="_next" value="message sent" /> -->
 
             <button type="submit" class="btn btn-lg btn-dark btn-block">
               Send
             </button>
           </form>
+          </div>
+        </div>
         </div>
       </section>
     </main>
