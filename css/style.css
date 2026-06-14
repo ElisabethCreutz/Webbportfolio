@@ -4,17 +4,35 @@
   margin: 0;
   padding: 0;
 }
-body{
+body {
   background-color: rgb(34, 78, 34);
-  color:bisque;
+  color: bisque;
   font-family: Arial, Helvetica, sans-serif;
 }
-section{
+section {
   padding-bottom: 40px;
+}
+
+.hero-container {
+  height: 120vh;
+  text-align: center;
+  padding-left:5%;
+  padding-right:5%;
+}
+.phrase {
+  display: flex;
+  text-align: end;
+  vertical-align: super;
+  font-size: 3.5vw;
+  padding-top: 50vh;
 }
 h1 {
   font-family: fantasy; /*testar*/
-  font-size: 14vw;
+  /* font-size:170px; */
+  font-size: 13.4vw;
+}
+.general-container {
+  max-width: 80%;
 }
 img {
   height: 60px;
@@ -24,7 +42,7 @@ label {
   margin-top: 10px;
   font-weight: bold;
 }
-.contact-container {
+.duo-container {
   max-width: 80%;
   margin: 0 auto;
   display: grid;
