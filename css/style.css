@@ -15,10 +15,9 @@ section {
 section #home {
   padding-bottom: 0;
 }
-a{
+a {
   color: rgb(241, 223, 201);
   text-decoration: dotted;
-  
 }
 .hero-container {
   height: 120vh;
@@ -35,13 +34,21 @@ a{
   padding-top: 50vh;
 }
 h1 {
-  font-family: fantasy; /*testar*/
-  /* font-size:170px; */
-  font-size: 13.5vw;
+  /* font-family: "Tilt Prism", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "XROT" 0,
+    "YROT" 0; */
+  font-family: "Londrina Sketch", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14vw;
 }
-h2{
+h2 {
   padding-bottom: 10px;
-  padding-left:10%;
+  padding-left: 10%;
 }
 .general-container {
   padding-left: 10%;
@@ -57,19 +64,25 @@ label {
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
-  /* grid-auto-rows: minmax(100px, auto); */
+  gap: 10px;
+  grid-auto-rows: min-content;
 }
 .right-side-duo {
   grid-column: 2;
 }
-.triple-container{
+.triple-container {
   max-width: 80%;
-  padding-left:10%;
-  padding-right:10%;
- 
+  
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  grid-auto-rows: min-content;
 }
-
+.quote{
+  font-style: italic;
+  margin-bottom: 10px;
+}
 .contact-info {
   padding: 30px;
 }
