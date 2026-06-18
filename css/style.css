@@ -10,41 +10,63 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 section {
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
-section #home {
-  padding-bottom: 0;
+/* section #home {
+  margin-bottom: 0;
+} */
+nav {
+  display: flex;
+  align-items: center;
 }
-a {
+nav a {
   color: rgb(241, 223, 201);
+  padding: 10px;
   text-decoration: dotted;
 }
+nav a:hover {
+  border-color: rgb(241, 223, 201);
+  border-radius: 20%;
+  border-style: groove;
+}
 .hero-container {
-  height: 120vh;
-  text-align: center;
-  padding-left: 2%;
-  padding-right: 2%;
-  /* vertical-align: baseline; */
+  height: 100vh;
+  position:relative;
+}
+.hero-container .sub-hero {
+  /* margin-left: 10%;
+  margin-right: 10%; */
+  position:absolute;
+  bottom:0px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  grid-auto-rows: min-content;
 }
 .phrase {
-  /* display: flex; */
+  grid-column: 2;
   /* text-align: end; */
-  /* vertical-align: super; */
+  align-self: self-end;
   font-size: 3vw;
-  padding-top: 50vh;
+  padding-right: 10%;
 }
+.doodle-container {
+width:100%; 
+  /* height: 400px; */
+  padding-bottom: 20%;
+  padding-right: 0;
+}
+/* .doodle-container img{
+ 
+} */
 h1 {
-  /* font-family: "Tilt Prism", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings:
-    "XROT" 0,
-    "YROT" 0; */
+  text-align: center;
   font-family: "Londrina Sketch", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 14vw;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 h2 {
   padding-bottom: 10px;
@@ -67,19 +89,24 @@ label {
   gap: 10px;
   grid-auto-rows: min-content;
 }
-.right-side-duo {
-  grid-column: 2;
-}
+/* .right-side-duo {
+} */
 .triple-container {
   max-width: 80%;
-  
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   grid-auto-rows: min-content;
 }
-.quote{
+.project-card {
+  max-height: 100px;
+}
+.project-image {
+  width: 100%;
+  border-radius: 10%;
+}
+.quote {
   font-style: italic;
   margin-bottom: 10px;
 }
@@ -89,7 +116,22 @@ label {
 .form-container {
   padding: 30px;
 }
-
+div a {
+  color: rgb(241, 223, 201);
+  font-weight: 700;
+  text-decoration: dotted;
+}
+div a:hover {
+  color: cyan;
+}
+footer a {
+  color: rgb(241, 223, 201);
+  font-weight: 700;
+  text-decoration: dotted;
+}
+footer a:hover {
+  color: burlywood;
+}
 /* @media (max-width:600px){
 	 mobile first 
 }
