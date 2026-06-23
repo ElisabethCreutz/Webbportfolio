@@ -10,27 +10,37 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 section {
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 /* section #home {
   margin-bottom: 0;
 } */
+ header{
+ }
 nav {
-  display: flex;
-  align-items: center;
+  font-family: "Londrina Sketch", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+display: block;
+position: sticky;  
+align-items: center;
 }
 nav a {
   color: rgb(241, 223, 201);
-  padding: 10px;
+  padding: 0px;
   text-decoration: dotted;
 }
 nav a:hover {
   border-color: rgb(241, 223, 201);
   border-radius: 20%;
-  border-style: groove;
+  border-style: none;
 }
 .hero-container {
-  height: 100vh;
+  height: 105vh;
   position: relative;
 }
 .hero-container .sub-hero {
@@ -45,9 +55,11 @@ nav a:hover {
 }
 .phrase {
   grid-column: 2;
-  /* text-align: end; */
   align-self: self-end;
-  font-size: 3vw;
+  font-family: "Londrina Sketch", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4.3vw;
   padding-right: 10%;
 }
 .doodle-container {
@@ -63,6 +75,7 @@ nav a:hover {
  
 } */
 h1 {
+  display: block;
   text-align: center;
   font-family: "Londrina Sketch", sans-serif;
   font-weight: 400;
@@ -73,6 +86,10 @@ h1 {
   z-index: 2;
 }
 h2 {
+  font-family: "Londrina Sketch", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
   padding-bottom: 10px;
   padding-left: 10%;
 }
@@ -80,8 +97,8 @@ h3 {
   padding-bottom: 5px;
 }
 .general-container {
-  padding-left: 10%;
-  padding-right: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 label {
   display: block;
@@ -111,18 +128,18 @@ label {
   border-radius: 10px;
   border-style: outset;
   border-width: 2px;
-  padding: 10px;
+  padding: 20px;
 }
 .skill-card:hover {
   /* border-color: burlywood;
   color: burlywood; */
-  padding: 8px;
+  padding: 10 8 8 10px;
   border-width: 4px;
 }
 .project-card {
   border-color: rgb(241, 223, 201);
   border-radius: 10px;
-  border-style:solid;
+  border-style: solid;
   padding: 10px;
 }
 .project-image {
@@ -134,11 +151,30 @@ label {
   font-style: italic;
   margin-bottom: 10px;
 }
+#contact .duo-container {
+  border-color: rgb(241, 223, 201);
+  border-radius: 10px;
+  border-style: solid;
+  /* padding: 10px; */
+}
 .contact-info {
   padding: 30px;
 }
 .form-container {
   padding: 30px;
+}
+.form-container .btn {
+  display: block;
+  background-color: rgb(34, 78, 34);
+  color: rgb(241, 223, 201);
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+input,
+textarea {
+  background-color: rgb(241, 223, 201);
+  border-radius: 5px;
 }
 div a {
   color: rgb(241, 223, 201);
@@ -148,6 +184,8 @@ div a {
 div a:hover {
   color: cyan;
 }
+footer {
+}
 footer a {
   color: rgb(241, 223, 201);
   font-weight: 700;
@@ -155,6 +193,8 @@ footer a {
 }
 footer a:hover {
   color: burlywood;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 /* @media (max-width:600px){
 	 mobile first 
