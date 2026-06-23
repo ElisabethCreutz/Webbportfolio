@@ -15,29 +15,51 @@ section {
 /* section #home {
   margin-bottom: 0;
 } */
- header{
- }
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: rgb(34, 78, 34);
+}
 nav {
   font-family: "Londrina Sketch", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 1.5rem;
-  position: fixed;
-  top: 0;
-  overflow: hidden;
-display: block;
-position: sticky;  
-align-items: center;
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  padding: 1rem;
+}
+.nav-title {
+  position: absolute;
+  left: 1rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+}
+.nav-title.show {
+  opacity: 1;
+  visibility: visible;
+}
+.nav-links {
+  display: flex;
+  gap: 2rem;
 }
 nav a {
   color: rgb(241, 223, 201);
   padding: 0px;
-  text-decoration: dotted;
+  text-decoration: none;
 }
 nav a:hover {
-  border-color: rgb(241, 223, 201);
+  /* border-color: rgb(241, 223, 201);
   border-radius: 20%;
-  border-style: none;
+  border-style: none; */
+  color: burlywood;
 }
 .hero-container {
   height: 105vh;
@@ -131,8 +153,8 @@ label {
   padding: 20px;
 }
 .skill-card:hover {
-  /* border-color: burlywood;
-  color: burlywood; */
+  border-color: burlywood;
+  color: burlywood;
   padding: 10 8 8 10px;
   border-width: 4px;
 }
@@ -182,9 +204,11 @@ div a {
   text-decoration: dotted;
 }
 div a:hover {
-  color: cyan;
+  color: burlywood;
 }
 footer {
+  display: block;
+  margin-left: 10%;
 }
 footer a {
   color: rgb(241, 223, 201);
@@ -193,8 +217,6 @@ footer a {
 }
 footer a:hover {
   color: burlywood;
-  margin-left: 10%;
-  margin-right: 10%;
 }
 /* @media (max-width:600px){
 	 mobile first 
