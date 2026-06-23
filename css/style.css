@@ -10,6 +10,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 section {
+    scroll-margin-top: 90px;
   margin-bottom: 60px;
 }
 /* section #home {
@@ -25,7 +26,7 @@ nav {
   font-family: "Londrina Sketch", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1.5rem;
+  font-size: 2rem;
 
   position: relative;
   display: flex;
@@ -33,7 +34,7 @@ nav {
   align-items: center;
   gap: 2rem;
 
-  padding: 1rem;
+  padding: 0.5rem;
 }
 .nav-title {
   position: absolute;
@@ -54,6 +55,7 @@ nav a {
   color: rgb(241, 223, 201);
   padding: 0px;
   text-decoration: none;
+  font-weight: 400 !important;
 }
 nav a:hover {
   /* border-color: rgb(241, 223, 201);
@@ -132,7 +134,7 @@ label {
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+  gap: 20px;
   grid-auto-rows: min-content;
 }
 /* .right-side-duo {
@@ -170,6 +172,7 @@ label {
   margin-bottom: 5px;
 }
 .quote {
+  /* padding:10%; */
   font-style: italic;
   margin-bottom: 10px;
 }
