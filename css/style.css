@@ -165,8 +165,9 @@ label {
     font-size: 2rem;
   }
 }
-.icon-img{
-  max-height: 2.5rem;
+.icon-img {
+  max-height: 3rem;
+  border-radius: 10px;
 }
 .skill-card:hover {
   border-color: burlywood;
@@ -245,13 +246,11 @@ div a:hover {
   color: burlywood;
 }
 footer {
-  /* display:inline; */
-  display: flex;
-  flex-direction: row;
-  margin-left: 10%;
+  text-align: right;
+  margin-right: 10%;
 }
 footer a {
-  align-self:center;
+  align-self: center;
   color: rgb(241, 223, 201);
   text-decoration: dotted;
   font-size: 0.5rem;
@@ -259,9 +258,7 @@ footer a {
 footer a:hover {
   color: burlywood;
 }
-.copy{
-  padding-right: 30%;
-}
+
 /* @media (max-width:600px){
 	 mobile first 
 }
