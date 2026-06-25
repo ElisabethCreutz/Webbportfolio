@@ -7,7 +7,14 @@
 body {
   background-color: rgb(34, 78, 34);
   color: rgb(241, 223, 201);
-  font-family: Arial, Helvetica, sans-serif;
+
+  /* // <weight>: Use a value from 100 to 900
+// <uniquifier>: Use a unique and descriptive class name */
+
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 section {
   scroll-margin-top: 90px;
@@ -153,6 +160,13 @@ label {
   border-style: outset;
   border-width: 2px;
   padding: 20px;
+
+  p {
+    font-size: 2rem;
+  }
+}
+.icon-img{
+  max-height: 2.5rem;
 }
 .skill-card:hover {
   border-color: burlywood;
@@ -171,10 +185,17 @@ label {
   border-radius: 10px;
   margin-bottom: 5px;
 }
+.quote-card {
+  padding: 10px;
+  text-align: center;
+}
 .quote {
-  /* padding:10%; */
+  line-height: 1.3rem;
   font-style: italic;
   margin-bottom: 10px;
+}
+.quote-by {
+  font-size: 0.8rem;
 }
 #contact .duo-container {
   border-color: rgb(241, 223, 201);
@@ -183,18 +204,32 @@ label {
   /* padding: 10px; */
 }
 .contact-info {
+  display: flex;
+  flex-direction: column;
   padding: 30px;
+  line-height: 2rem;
+}
+.socials {
+  font-size: 2rem;
 }
 .form-container {
   padding: 30px;
 }
-.form-container .btn {
+#contact .btn {
   display: block;
+  max-width: 50%;
   background-color: rgb(34, 78, 34);
   color: rgb(241, 223, 201);
-  border-radius: 5px;
-  padding: 5px;
-  margin: 5px;
+  font-weight: bold;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: rgb(241, 223, 201);
+  padding: 10px;
+  margin: 10px 10px 10px 0px;
+}
+#contact .btn:hover {
+  color: burlywood;
+  border-color: burlywood;
 }
 input,
 textarea {
@@ -210,16 +245,22 @@ div a:hover {
   color: burlywood;
 }
 footer {
-  display: block;
+  /* display:inline; */
+  display: flex;
+  flex-direction: row;
   margin-left: 10%;
 }
 footer a {
+  align-self:center;
   color: rgb(241, 223, 201);
-  font-weight: 700;
   text-decoration: dotted;
+  font-size: 0.5rem;
 }
 footer a:hover {
   color: burlywood;
+}
+.copy{
+  padding-right: 30%;
 }
 /* @media (max-width:600px){
 	 mobile first 

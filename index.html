@@ -7,10 +7,9 @@
     <link rel="stylesheet" href="css/boxes.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap" rel="stylesheet">
-    <script src="js/main.js" defer></script>
-
-    <title>Elisabeth Creutz</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Londrina+Sketch&display=swap" rel="stylesheet">    <script src="js/main.js" defer></script>
+<script src="https://kit.fontawesome.com/151d6cc8c8.js" crossorigin="anonymous"></script>
+<title>Elisabeth Creutz</title>
   </head>
   <body>
     <header>
@@ -49,21 +48,31 @@
         <h2>Technical expertise</h2>
         <div class="triple-container">
           <div class="skill-card">
-            <h3>Type of skill</h3>
-            <p>[icon] [icon] [icon] [icon] [icon] </p>
+            <h3>Backend</h3>
+            <!-- <p><img class="icon-img" src="assets/icons/Flaticon/c-sharp.png" alt="C#">  -->
+            <p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=git,kubernetes,docker,c,vim" />
+  </a>
+</p>
           </div>
       <div class="skill-card">
-            <h3>Type of skill</h3>
-            <p>[icon] [icon] [icon] [icon] [icon] </p>
+            <h3>Frontend</h3>
+            <i class="bi bi-javascript"></i>
+            <!-- <p><i class="fa-brands fa-square-js"></i>
+              <i class="fa-brands fa-css"></i> -->
+              <!-- <i class="fa-brands fa-css3-alt"></i>
+             <i class="fa-brands fa-html5"></i> --> 
+            </p>
           </div>      
 <div class="skill-card">
-            <h3>Type of skill</h3>
+            <h3>Other skills</h3>
             <p>[icon] [icon] [icon] [icon] [icon] </p>
           </div>
           </section>
+
       <section id="projects">
         <h2>Projects</h2>
-
         <div class="triple-container">
           <div class="project-card">
             <img class="project-image" src="assets/images/project-template-coming.png" alt="project coming soon">
@@ -103,6 +112,7 @@
           </div>
         </div>
       </section>
+
       <section id="about">
         <h2 class="special-text">About me</h2>
         <div class="duo-container">
@@ -137,15 +147,15 @@
 <div class="quote-card">
           <p class="quote">”Elisabeth is a meticulous and analythical person with strong social skills, enabling her to work very effectively both in teams and independently. 
             Over several years Elisabeth has demonstrated strong leadership abilities, by managing exhibition projects, along with a well developed capacity to plan and adhere to timelines.”</p>
-          <p>- Desirée Blomberg, Head of Exhibition & Collection Management, Moderna Museet</p>
+          <p class="quote-by">- Desirée Blomberg, Head of Exhibition & Collection Management, Moderna Museet</p>
           </div>
           <div class="quote-card">
           <p class="quote">”Working with Elisabeth has been a true pleasure. Her positive energy, openness, and willingness to support others make her someone people naturally turn to, while her ability to structure complex projects and communicate clearly makes her an exceptional collaborator. Elisabeth brings curiosity, dedication, and professionalism to everything she does, inspiring those around her.”</p>
-          <p>- Carina Hundsdahl, Curator/Exhibitions Manager</p>
+          <p class="quote-by">- Carina Hundsdahl, Curator/Exhibitions Manager</p>
           </div>
           <div class="quote-card">
           <p class="quote">”Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra at nibh non luctus. Cras id fermentum justo. Ut placerat in lectus eget pulvinar. Morbi ultrices dui eu neque vehicula malesuada. Duis quis nulla non est varius feugiat sed nec risus. Suspendisse in urna finibus, blandit metus at, consequat elit.”</p>
-          <p>- Name and Position</p>
+          <p class="quote-by">- Name and Position</p>
           </div>
         </div>
       </section>
@@ -154,13 +164,20 @@
         <h2>Contact me</h2>
         <div class="duo-container">
           <div class="contact-info">
-        <p>Give me a <a href="tel:0735716619">call</a></p>
+        <p><i class="fa-solid fa-phone"></i> <a href="tel:0735716619">0735-716619</a></p>
         <p>
-          Mail:
+          <i class="fa-regular fa-envelope"></i>
           <a href="mailto:elisabeth.creutz@gmail.com"
             >elisabeth.creutz[@]gmail.com</a
           >
         </p>
+        <button class="btn"><a href="assets/cv/tempCV.pdf" download="ElisabethCreutzCV"><i class="fa-solid fa-download"></i> CV</a></button>        
+<div class="socials">
+        <a href="https://www.linkedin.com/in/elisabethcreutz/"><i class="fa-brands fa-square-linkedin"></i></a>
+        <a href="https://github.com/ElisabethCreutz"><i class="fa-brands fa-square-github"></i></a>
+</div>
+
+
         </div>
         <div class="form-container">
           <form
@@ -176,27 +193,26 @@
                     id="name"
                     name="Name"
                     placeholder="Name Namesson"
-                    required
+                                                        required
                   />
-               
-                  
+                                 
                   <label for="email">Email</label>
                   <input
                     type="email"
                     id="email"
                     name="Email"
                     placeholder="name@email.com"
-                    required
+                                                required
                     pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
                   />
              
-              <label for="message"></label>
+              <label for="message">Message</label>
               <textarea
               id="message"
               name="Message"
               placeholder="Hiya, write me a message"
                 rows="5"
-                required
+                                required
               ></textarea>
             
             <!-- <input type="hidden" name="_next" value="message sent" /> -->
@@ -212,11 +228,9 @@
     </main>
 
     <footer>
-      <p>
-        <a href="https://www.linkedin.com/in/elisabethcreutz/">LinkedIn</a>
-        <a href="https://github.com/ElisabethCreutz">Github</a>
-      </p>
-      <p>&copy Elisabeth Creutz 2026</p>
-    </footer>
+            <p class="copy">&copy Elisabeth Creutz 2026</p>
+        <a href="https://www.flaticon.com/free-icons/" title="c sharp icons">Icons created by Freepik - Flaticon</a>
+      <a href="https://iconscout.com/icons/visual-studio" class="text-underline font-size-sm" target="_blank">Visual Studio</a> by <a href="https://iconscout.com/contributors/icon-mafia" class="text-underline font-size-sm" target="_blank">Icon Mafia</a>
+      </footer>
   </body>
 </html>
