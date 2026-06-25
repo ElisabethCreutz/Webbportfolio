@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900" role="img" aria-labelledby="title desc">
+  <title id="title">Hand-drawn circular doodle</title>
+  <desc id="desc">A loose hand-drawn circular highlight in a warm cream color.</desc>
+  <g fill="none" stroke="#f1dfc9" stroke-linecap="round" stroke-linejoin="round">
+    <path
+      d="M821 414c17 129-25 255-121 338-97 84-238 109-371 65C194 772 91 662 64 525 38 389 92 252 197 165 300 79 447 44 580 80c135 37 224 165 241 334Z"
+      stroke-width="34"
+    />
+    <path
+      d="M833 465c-4 122-70 238-177 302-107 65-243 74-362 27C173 746 83 646 62 524 39 395 89 269 190 180 290 92 425 47 558 70c131 22 230 111 265 239 14 51 16 103 10 156Z"
+      stroke-width="12"
+      opacity="0.9"
+    />
+    <path
+      d="M97 608c41 99 127 176 233 213 125 43 271 19 369-63"
+      stroke-width="18"
+      opacity="0.85"
+    />
+    <path
+      d="M449 51c78-4 163 18 226 63 57 42 101 101 128 169"
+      stroke-width="10"
+      opacity="0.8"
+    />
+    <path
+      d="M79 504c-6-73 8-144 43-208 30-56 74-105 128-142"
+      stroke-width="16"
+      opacity="0.75"
+    />
+    <path
+      d="M170 724c54 55 124 93 204 111 84 18 177 8 255-25"
+      stroke-width="8"
+      opacity="0.8"
+    />
+    <path
+      d="M698 132c43 34 79 79 103 132"
+      stroke-width="7"
+      opacity="0.7"
+    />
+  </g>
+</svg>

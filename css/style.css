@@ -121,10 +121,11 @@ h2 {
   font-weight: 400;
   font-style: normal;
   font-size: 3rem;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   padding-left: 10%;
 }
 h3 {
+  font-size: 1rem;
   padding-bottom: 5px;
 }
 .general-container {
@@ -141,7 +142,8 @@ label {
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  column-gap: 30px;
+  row-gap: 10px;
   grid-auto-rows: min-content;
 }
 /* .right-side-duo {
@@ -165,21 +167,35 @@ label {
     font-size: 2rem;
   }
 }
-.icon-img {
-  max-height: 3rem;
-  border-radius: 10px;
-}
 .skill-card:hover {
   border-color: burlywood;
   color: burlywood;
   padding: 10 8 8 10px;
   border-width: 4px;
 }
+.icon-img {
+  max-height: 3rem;
+  border-radius: 10px;
+}
 .project-card {
   border-color: rgb(241, 223, 201);
   border-radius: 10px;
   border-style: solid;
+  box-shadow: 10px;
   padding: 10px;
+  p {
+    font-size: 0.8rem;
+    padding-bottom: 10px;
+  }
+  a {
+    font-size: 1rem;
+  }
+}
+.disabled-link {
+  cursor: default;
+  pointer-events: none;
+  text-decoration: none;
+  color: rgb(22, 51, 22);
 }
 .project-image {
   width: 100%;
@@ -211,6 +227,7 @@ label {
   line-height: 2rem;
 }
 .socials {
+  padding-top: 60px;
   font-size: 2rem;
 }
 .form-container {
@@ -218,7 +235,7 @@ label {
 }
 #contact .btn {
   display: block;
-  max-width: 50%;
+  max-width: 40%;
   background-color: rgb(34, 78, 34);
   color: rgb(241, 223, 201);
   font-weight: bold;
@@ -249,7 +266,7 @@ footer {
   text-align: right;
   margin-right: 10%;
 }
-footer a {
+/* footer a {
   align-self: center;
   color: rgb(241, 223, 201);
   text-decoration: dotted;
@@ -257,7 +274,7 @@ footer a {
 }
 footer a:hover {
   color: burlywood;
-}
+} */
 
 /* @media (max-width:600px){
 	 mobile first 
