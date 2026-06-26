@@ -7,10 +7,7 @@
 body {
   background-color: rgb(34, 78, 34);
   color: rgb(241, 223, 201);
-
-  /* // <weight>: Use a value from 100 to 900
-// <uniquifier>: Use a unique and descriptive class name */
-
+  /* <weight>: Use a value from 100 to 900*/
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -20,9 +17,6 @@ section {
   scroll-margin-top: 90px;
   margin-bottom: 60px;
 }
-/* section #home {
-  margin-bottom: 0;
-} */
 header {
   position: sticky;
   top: 0;
@@ -75,8 +69,6 @@ nav a:hover {
   position: relative;
 }
 .hero-container .sub-hero {
-  /* margin-left: 10%;
-  margin-right: 10%; */
   position: absolute;
   bottom: 0px;
   display: grid;
@@ -102,9 +94,6 @@ nav a:hover {
   padding-right: 0;
   z-index: 1;
 }
-/* .doodle-container img{
- 
-} */
 h1 {
   display: block;
   text-align: center;
@@ -146,8 +135,6 @@ label {
   row-gap: 10px;
   grid-auto-rows: min-content;
 }
-/* .right-side-duo {
-} */
 .triple-container {
   max-width: 80%;
   margin: 0 auto;
@@ -178,18 +165,29 @@ label {
   border-radius: 10px;
 }
 .project-card {
+  display: flex;
+  flex-direction: column;
   border-color: rgb(241, 223, 201);
   border-radius: 10px;
   border-style: solid;
-  box-shadow: 10px;
   padding: 10px;
   p {
     font-size: 0.8rem;
     padding-bottom: 10px;
   }
-  a {
+  .project-links {
+    margin-top: auto;
+    text-align: center;
     font-size: 1rem;
   }
+  .fa-globe {
+    padding-left: 10px;
+  }
+}
+.project-card:hover {
+  border-color: burlywood;
+  padding: 10 8 8 10px;
+  border-width: 4px;
 }
 .disabled-link {
   cursor: default;
@@ -218,7 +216,6 @@ label {
   border-color: rgb(241, 223, 201);
   border-radius: 10px;
   border-style: solid;
-  /* padding: 10px; */
 }
 .contact-info {
   display: flex;
@@ -227,7 +224,7 @@ label {
   line-height: 2rem;
 }
 .socials {
-  padding-top: 60px;
+  margin-top: auto;
   font-size: 2rem;
 }
 .form-container {
@@ -235,7 +232,7 @@ label {
 }
 #contact .btn {
   display: block;
-  max-width: 40%;
+  max-width: 30%;
   background-color: rgb(34, 78, 34);
   color: rgb(241, 223, 201);
   font-weight: bold;
@@ -266,7 +263,7 @@ footer {
   text-align: right;
   margin-right: 10%;
 }
-/* footer a {
+footer a {
   align-self: center;
   color: rgb(241, 223, 201);
   text-decoration: dotted;
@@ -274,8 +271,7 @@ footer {
 }
 footer a:hover {
   color: burlywood;
-} */
-
+}
 /* @media (max-width:600px){
 	 mobile first 
 }
