@@ -131,7 +131,7 @@ label {
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 8rem;
+  column-gap: 5rem;
   row-gap: 1rem;
   grid-auto-rows: min-content;
   padding: 3rem;
