@@ -131,9 +131,10 @@ label {
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 30px;
-  row-gap: 10px;
+  column-gap: 8rem;
+  row-gap: 1rem;
   grid-auto-rows: min-content;
+  padding: 3rem;
 }
 .triple-container {
   max-width: 80%;
@@ -201,7 +202,7 @@ label {
   width: 100%;
   max-height: 12rem;
   border-radius: 10px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 .quote-card {
   padding: 10px;
