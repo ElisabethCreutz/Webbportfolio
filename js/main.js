@@ -13,3 +13,17 @@ function toggleNavTitle() {
 
 window.addEventListener("scroll", toggleNavTitle);
 toggleNavTitle();
+
+ const dropbtn = document.querySelector(".dropbtn");
+  const dropdownContent = document.querySelector(".dropdown-content");
+
+  dropbtn.addEventListener("click", function (event) {
+    event.stopPropagation();
+    dropdownContent.classList.toggle("show");
+  });
+
+  document.addEventListener("click", function (event) {
+    if (!event.target.closest(".dropdown")) {
+      dropdownContent.classList.remove("show");
+    }
+  });

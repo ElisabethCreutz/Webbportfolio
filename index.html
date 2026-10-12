@@ -22,11 +22,21 @@
     <header>
       <nav>
         <a href="#top" class="nav-title">Elisabeth Creutz</a>
-        <div class="nav-links">
+        <div class="nav-links" id="myTopnav">
           <a href="#skills">Skills</a>
           <a href="#projects">Projects</a>
           <a href="#about">About</a>
+          <a href="#contact">Contact</a></div>
+           <div class="dropdown">
+    <button class="dropbtn">Menu 
+    </button>
+    <div class="dropdown-content">
+            <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#about">About</a>
           <a href="#contact">Contact</a>
+    
+  </div> 
         </div>
       </nav>
     </header>
@@ -38,7 +48,7 @@
           <div class="sub-hero">
             <img
               class="doodle-container"
-              src="assets/images/vecteezy_hand-drawn-circle-highlighting_21998553.png"
+              src="assets/images/doodle-circle-cream.svg"
               alt="doodle graphics"
             />
             <p class="phrase">
@@ -50,48 +60,34 @@
       </section>
 
       <section id="skills">
-        <h2>Technical expertise</h2>
+        <h2>Technical skills</h2>
         <div class="triple-container">
           <div class="skill-card">
-            <h3>Languages</h3>
+            <h3>Backend</h3>
             <img src="https://skillicons.dev/icons?i=cs" alt="C#" />
-            <img src="https://skillicons.dev/icons?i=js" alt="JS" />
             <img
-              src="assets/icons/xandemon/microsoft-sql-server-2.svg"
-              alt="SQL"
-              class="icon-img"
+            src="assets/icons/xandemon/microsoft-sql-server-2.svg"
+            alt="SQL"
+            class="icon-img"
             />
+            <img src="https://skillicons.dev/icons?i=azure" alt="Azure" />
           </div>
           <div class="skill-card">
-            <h3>Skills</h3>
+            <h3>Frontend</h3>
             <img src="https://skillicons.dev/icons?i=html" alt="HTML" />
             <img src="https://skillicons.dev/icons?i=css" alt="CSS" />
             <img
-              src="https://skillicons.dev/icons?i=bootstrap"
-              alt="Bootstrap"
+            src="https://skillicons.dev/icons?i=bootstrap"
+            alt="Bootstrap"
             />
-            <img src="https://skillicons.dev/icons?i=visualstudio" alt="VS" />
-            <img src="https://skillicons.dev/icons?i=vscode" alt="VS code" />
-            <img src="https://skillicons.dev/icons?i=dotnet" alt=".NET" />
-            <img src="https://skillicons.dev/icons?i=azure" alt="Azure" />
-            <img src="https://skillicons.dev/icons?i=github" alt="Github" />
+            <img src="https://skillicons.dev/icons?i=js" alt="JS" />
           </div>
           <div class="skill-card">
-            <h3>Want to learn</h3>
-            <img src="https://skillicons.dev/icons?i=figma" alt="Figma" />
-            <img src="https://skillicons.dev/icons?i=angular" alt="Angular" />
-            <img src="https://skillicons.dev/icons?i=git" alt="Git" />
-            <img src="https://skillicons.dev/icons?i=react" alt="React" />
-            <img src="https://skillicons.dev/icons?i=nodejs" alt="NodeJS" />
-            <img
-              src="assets/icons/xandemon/typescript.svg"
-              alt="typescript"
-              class="icon-img"
-            />
-            <img
-              src="https://skillicons.dev/icons?i=powershell"
-              alt="Powershell"
-            />
+            <h3>Frameworks & tools</h3>
+            <img src="https://skillicons.dev/icons?i=dotnet" alt=".NET" />
+            <img src="https://skillicons.dev/icons?i=github" alt="Github" />
+            <img src="https://skillicons.dev/icons?i=visualstudio" alt="VS" />
+            <img src="https://skillicons.dev/icons?i=vscode" alt="VS code" />
           </div>
         </div>
       </section>
@@ -99,26 +95,70 @@
       <section id="projects">
         <h2>Projects</h2>
         <div class="triple-container">
-          <div class="project-card">
+             <div class="project-card">
             <img
               class="project-image"
               src="assets/images/Comingsoon2.png"
               alt="project coming soon"
             />
-            <h3>BettyBettans Zoologiska Miniko-park</h3>
+            <h3>Bank app</h3>
+            <p>Current school project, available here from end of Nov.</p>
+            <div class="project-links">
+              <a
+                href="https://github.com/ElisabethCreutz"
+                class="disabled-link"
+                target="_blank"
+                ><i class="fa-brands fa-github"></i> read more</a
+              >
+              <a
+                href="https://github.com/ElisabethCreutz"
+                class="disabled-link"
+                target="_blank"
+                ><i class="fa-solid fa-globe"></i> live demo</a
+              >
+            </div>
+          </div>
+          
+          <div class="project-card">
+            <img
+              class="project-image"
+              src="assets/images/Blixthack.png"
+              alt="project coming soon"
+            />
+            <h3>Blixthack Forum</h3>
+            <p>School group project for learning agile methods. Web forum created for "client" in ASP.NET Core MVC with planning in Jira.</p>
+            <div class="project-links">
+              <a
+                href="https://github.com/Aleccar/OCICE-BlixtHack"
+                target="_blank"
+                ><i class="fa-brands fa-github"></i> read more</a
+              >
+              <a
+                href="https://github.com/ElisabethCreutz"
+                class="disabled-link"
+                target="_blank"
+                ><i class="fa-solid fa-globe"></i> live demo</a
+              >
+            </div>
+          </div>
+          <div class="project-card">
+            <img
+              class="project-image"
+              src="assets/images/webportfolio.png"
+              alt="project coming soon"
+            />
+            <h3>Web Portfolio</h3>
             <p>
-              Class assignment to create a website for a zoo using html and css
+              Class assignment to create a personal portfolio to display my skills and projects, using HTML, CSS and Javascript.
             </p>
             <div class="project-links">
               <a
-                href="https://github.com/ElisabethCreutz/zoo"
-                class="disabled-link"
+                href="https://github.com/ElisabethCreutz/Webbportfolio"
                 target="_blank"
                 ><i class="fa-brands fa-github"></i> read more</a
               >
               <a
-                href="https://github.com/ElisabethCreutz/zoo"
-                class="disabled-link"
+                href="https://elisabethcreutz.github.io/Webbportfolio/"
                 target="_blank"
                 ><i class="fa-solid fa-globe"></i> live demo</a
               >
@@ -127,38 +167,14 @@
           <div class="project-card">
             <img
               class="project-image"
-              src="assets/images/Comingsoon2.png"
+              src="assets/images/Hotellappen.png"
               alt="project coming soon"
             />
-            <h3>Coming project</h3>
-            <p>Here you will read about my next project</p>
+            <h3>Hotel booking app</h3>
+            <p>School project while learning databases, I created a hotel booking console application, using C#, Entity Framework, Microsoft SQL Server.</p>
             <div class="project-links">
               <a
-                href="https://github.com/ElisabethCreutz"
-                class="disabled-link"
-                target="_blank"
-                ><i class="fa-brands fa-github"></i> read more</a
-              >
-              <a
-                href="https://github.com/ElisabethCreutz"
-                class="disabled-link"
-                target="_blank"
-                ><i class="fa-solid fa-globe"></i> live demo</a
-              >
-            </div>
-          </div>
-          <div class="project-card">
-            <img
-              class="project-image"
-              src="assets/images/Comingsoon2.png"
-              alt="project coming soon"
-            />
-            <h3>Coming project</h3>
-            <p>Here you will read about my next project</p>
-            <div class="project-links">
-              <a
-                href="https://github.com/ElisabethCreutz"
-                class="disabled-link"
+                href="https://github.com/ElisabethCreutz/Hotellapp"
                 target="_blank"
                 ><i class="fa-brands fa-github"></i> read more</a
               >
@@ -173,15 +189,14 @@
           <div class="project-card">
             <img
               class="project-image"
-              src="assets/images/Comingsoon2.png"
+              src="assets/images/Kassasystem.png"
               alt="project coming soon"
             />
-            <h3>Coming project</h3>
-            <p>Here you will read about my next project</p>
+            <h3>Sales app</h3>
+            <p>My first app: a school project to create an app for a store, using C# and OOP.</p>
             <div class="project-links">
               <a
-                href="https://github.com/ElisabethCreutz"
-                class="disabled-link"
+                href="https://github.com/ElisabethCreutz/Kassasystem"
                 target="_blank"
                 ><i class="fa-brands fa-github"></i> read more</a
               >
@@ -193,29 +208,7 @@
               >
             </div>
           </div>
-          <div class="project-card">
-            <img
-              class="project-image"
-              src="assets/images/Comingsoon2.png"
-              alt="project coming soon"
-            />
-            <h3>Coming project</h3>
-            <p>Here you will read about my next project</p>
-            <div class="project-links">
-              <a
-                href="https://github.com/ElisabethCreutz"
-                class="disabled-link"
-                target="_blank"
-                ><i class="fa-brands fa-github"></i> read more</a
-              >
-              <a
-                href="https://github.com/ElisabethCreutz"
-                class="disabled-link"
-                target="_blank"
-                ><i class="fa-solid fa-globe"></i> live demo</a
-              >
-            </div>
-          </div>
+       
           <div class="project-card">
             <img
               class="project-image"
@@ -330,7 +323,7 @@
             <p>
               <i class="fa-regular fa-envelope"></i>
               <a href="mailto:elisabeth.creutz@gmail.com"
-                >elisabeth.creutz[@]gmail.com</a
+                >elisabeth.creutz@gmail.com</a
               >
             </p>
             <p>
@@ -341,10 +334,9 @@
               <i class="fa fa-map-marker" aria-hidden="true"></i> Hudiksvall
             </p>
             <a
-              class="btn"
               href="assets/cv/CVelisabethcreutz.pdf"
               download="ElisabethCreutzCV"
-              ><i class="fa-solid fa-download"></i> CV</a
+              ><i class="fa-solid fa-download"></i>Download CV</a
             >
             <div class="socials">
               <a
@@ -405,11 +397,6 @@
 
     <footer>
       <p class="copy">&copy; Elisabeth Creutz 2026</p>
-      <a
-        href="https://www.vecteezy.com/free-png/hand-drawn-circle"
-        target="_blank"
-        >Hand Drawn Circle PNGs by Vecteezy</a
-      >
     </footer>
   </body>
 </html>
