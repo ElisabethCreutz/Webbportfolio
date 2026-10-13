@@ -56,8 +56,8 @@ Through this project, I am practicing:
 
 ## Future Improvements
 Some things I want to improve or add:
-- [ ] Make the design responsive for mobile
-- [ ] Add real project descriptions and links
+- [x] Make the design responsive for mobile
+- [x] Add real project descriptions and links
 - [ ] Connect the portfolio to future projects
 - [ ] Refine the contact form styling
 - [ ] Add more JavaScript interactions
